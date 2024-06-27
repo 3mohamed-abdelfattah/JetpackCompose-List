@@ -7,6 +7,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -43,14 +44,14 @@ fun SimpleList(navController: NavController) {
     val simpleData: List<SimpleData> = gson.fromJson(dataFileString, listSimpleData)
 
     Column(
-        modifier = androidx.compose.ui.Modifier
+        modifier = Modifier
             .fillMaxSize()
             .background(Color.Black)
             .wrapContentSize(Alignment.Center)
     ) {
         Column(
-            modifier = androidx.compose.ui.Modifier
-                .fillMaxSize()
+            modifier = Modifier
+                .fillMaxWidth()
                 .height(50.dp)
                 .background(Color.Cyan),
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -93,6 +94,11 @@ fun SampleDataListItem(data: SimpleData, navController: NavController) {
                         RoundedCornerShape(5.dp)
                     )
             )
+            Column(modifier = Modifier.padding(10.dp)) {
+                Text(text = data.name, fontSize = 15.sp, fontWeight = FontWeight.Bold)
+                Spacer(modifier = Modifier.padding(10.dp))
+                Text(text = data.description, fontSize = 15.sp)
+            }
         }
     }
 }

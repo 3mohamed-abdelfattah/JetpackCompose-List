@@ -1,50 +1,50 @@
 [
   {
     "name": "Java",
-    "desc": "programming language"
+    "description": "programming language"
   },
   {
     "name": "Kotlin",
-    "desc": "programming language"
+    "description": "programming language"
   },
   {
     "name": "C",
-    "desc": "programming language"
+    "description": "programming language"
   },
   {
     "name": "C++",
-    "desc": "programming language"
+    "description": "programming language"
   },
   {
     "name": "Python",
-    "desc": "programming language"
+    "description": "programming language"
   },
   {
     "name": "JavaScript",
-    "desc": "programming language"
+    "description": "programming language"
   },
   {
     "name": "Go",
-    "desc": "programming language"
+    "description": "programming language"
   },
   {
     "name": "C#",
-    "desc": "programming language"
+    "description": "programming language"
   },
   {
     "name": "PHP",
-    "desc": "programming language"
+    "description": "programming language"
   },
   {
     "name": "Swift",
-    "desc": "programming language"
+    "description": "programming language"
   },
   {
     "name": "Rust",
-    "desc": "programming language"
+    "description": "programming language"
   },
   {
     "name": "Scala",
-    "desc": "programming language"
+    "description": "programming language"
   }
 ]
