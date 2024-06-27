@@ -84,6 +84,7 @@ fun SampleDataListItem(data: SimpleData, navController: NavController) {
     ) {
         Row(horizontalArrangement = Arrangement.Center, modifier = Modifier.fillMaxWidth()) {
             Image(
+                //Add Photo
                 painterResource(R.drawable.baseline_cruelty_free_24),
                 contentDescription = "Photo", modifier = Modifier
                     .width(60.dp)
