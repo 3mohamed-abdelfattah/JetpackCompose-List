@@ -66,9 +66,9 @@ fun SimpleListDetail(data: SimpleData) {
 
         Text(
             text = data.description,
-            color = Color.Black,
+            color = Color.DarkGray,
             fontSize = 25.sp,
-            fontWeight = FontWeight.Normal,
+            fontWeight = FontWeight.W500,
             textAlign = TextAlign.Center,
             lineHeight = 35.sp
         )
