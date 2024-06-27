@@ -46,23 +46,18 @@ fun SimpleList(navController: NavController) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.Black)
+            .background(color = Color(0xffffffff))
             .wrapContentSize(Alignment.Center)
     ) {
         Column(
             modifier = Modifier
                 .fillMaxWidth()
                 .height(50.dp)
-                .background(Color.Cyan),
+                .background(color = Color(0x0C00000)),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-            Text(
-                text = "Simple List",
-                color = Color.White,
-                fontSize = 20.sp,
-                fontWeight = FontWeight.Bold
-            )
+
         }
         LazyColumn(modifier = Modifier.padding(10.dp)) {
             items(simpleData) { data -> SampleDataListItem(data, navController) }
@@ -79,25 +74,35 @@ fun SampleDataListItem(data: SimpleData, navController: NavController) {
                 navController.navigate("simple_detail/$itemVal")
             }
             .padding(10.dp)
-            .fillMaxSize(),
-//        elevation = 5.dp
-        shape = RoundedCornerShape(5.dp)
+            .fillMaxSize()
+            .background(Color.White),
+        shape = RoundedCornerShape(25.dp)
     ) {
-        Row(horizontalArrangement = Arrangement.Center, modifier = Modifier.fillMaxWidth()) {
+        Row(
+            horizontalArrangement = Arrangement.Center,
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(Color.Unspecified)
+        ) {
             Image(
                 //Add Photo
-                painterResource(R.drawable.baseline_cruelty_free_24),
+                painterResource(R.drawable.jetpack),
                 contentDescription = "Photo", modifier = Modifier
-                    .width(60.dp)
-                    .height(60.dp)
+                    .width(90.dp)
+                    .height(90.dp)
                     .clip(
                         RoundedCornerShape(5.dp)
                     )
             )
             Column(modifier = Modifier.padding(10.dp)) {
-                Text(text = data.name, fontSize = 15.sp, fontWeight = FontWeight.Bold)
-                Spacer(modifier = Modifier.padding(10.dp))
-                Text(text = data.description, fontSize = 15.sp)
+                Text(text = data.name, fontSize = 22.sp, fontWeight = FontWeight.ExtraBold)
+                Spacer(modifier = Modifier.padding(5.dp))
+                Text(
+                    text = data.description,
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.W500,
+                    color = Color.Gray
+                )
             }
         }
     }

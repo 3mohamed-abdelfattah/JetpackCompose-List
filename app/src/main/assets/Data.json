@@ -1,50 +1,50 @@
 [
   {
     "name": "Java",
-    "description": "programming language"
+    "description": "Java was originally developed by James Gosling at Sun Microsystems."
   },
   {
     "name": "Kotlin",
-    "description": "programming language"
+    "description": "Kotlin is a statically typed programming language that runs on the Java Virtual Machine (JVM)."
   },
   {
     "name": "C",
-    "description": "programming language"
+    "description": "C is a procedural programming language originally developed by Dennis Ritchie for use with the Unix operating system."
   },
   {
     "name": "C++",
-    "description": "programming language"
+    "description": "C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C language."
   },
   {
     "name": "Python",
-    "description": "programming language"
+    "description": "Python is an interpreted, high-level programming language known for its simplicity and readability."
   },
   {
     "name": "JavaScript",
-    "description": "programming language"
+    "description": "JavaScript is a high-level, interpreted programming language that is widely used for creating interactive effects within web browsers."
   },
   {
     "name": "Go",
-    "description": "programming language"
+    "description": "Go, also known as Golang, is a statically typed, compiled programming language designed by Google."
   },
   {
     "name": "C#",
-    "description": "programming language"
+    "description": "C# (pronounced C sharp) is a multi-paradigm programming language developed by Microsoft."
   },
   {
     "name": "PHP",
-    "description": "programming language"
+    "description": "PHP is a server-side scripting language designed primarily for web development."
   },
   {
     "name": "Swift",
-    "description": "programming language"
+    "description": "Swift is a powerful and intuitive programming language developed by Apple for macOS, iOS, watchOS, tvOS, and beyond."
   },
   {
     "name": "Rust",
-    "description": "programming language"
+    "description": "Rust is a systems programming language that focuses on performance, reliability, and memory safety."
   },
   {
     "name": "Scala",
-    "description": "programming language"
+    "description": "Scala is a modern multi-paradigm programming language designed to express common programming patterns in a concise, elegant, and type-safe way."
   }
 ]
